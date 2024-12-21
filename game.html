@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+  <title>
+   game 
+  </title>
+  <style>
+    .black-white {
+      background-color: black;
+      color:  white;
+      text-shadow: 10px;
+      border-radius: 20p
+      padding-right:10px;
+      padding-left:10px;
+      padding-bottom:10px;
+      padding-top:10px;
+      align-content: center;
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+      
+
+    }
+    .pink-purple {
+      background-color: pink;
+      color:  purple;
+      text-shadow: 0cm;
+
+
+    }
+    .blue-yellow{
+      background-color: blue;
+      color:  yellow;
+      text-shadow: 0cm;
+    }
+  </style>
+</head>
+
+<body  bgcolor="skyblue">
+ <h1 >
+       welcome to Rock Paper Sciccsor
+    </h1>
+    <p id="demo">
+
+    </p>
+    <button onclick="myfunction1()
+      
+     "
+     class="black-white">
+     Paper
+    </button>
+    <button onclick=" myfunction2()"
+    class="black-white" >
+        Rock
+      </button>
+    <button onclick="myfunction3()
+    
+    "
+    class="black-white"
+    >
+    scissor
+
+    </button>
+     
+    <script>
+       
+            
+      console.log(score);
+      function myfunction1()
+      {
+        const computerMove = Math.random();
+      let variable='';
+      if(computerMove<1/3 && computerMove>0)
+      {
+         variable='paper';
+
+
+      }else if(computerMove>1/3 && computerMove<2/3)
+      {
+        variable='rock';
+      }
+    
+      else if(computerMove>2/3 && computerMove<1)
+      {
+        variable='scissor';
+      } 
+
+      if(variable==='paper')
+      {
+        
+        alert(`computer choice:${variable}.your choice:paper.game tied`);
+      }
+      else if(variable==='rock')
+      {
+        alert(`computer choice:${variable}.your choice:paper.you win the game`);
+      }
+      else if(variable==='scissor')
+      {
+        alert(`computer choice:${variable}.your choice:paper.you lose the game`);
+      }
+
+      }
+      function myfunction2()
+      {
+        const computerMove = Math.random();
+      let variable='';
+     if(computerMove<1/3 && computerMove>0)
+     {
+       variable='paper';
+
+
+     }else if(computerMove>1/3 && computerMove<2/3)
+     {
+      variable='rock';
+     }
+  
+     else if(computerMove>2/3 && computerMove<1)
+      {
+      variable='scissor';
+      } 
+
+     if(variable==='paper')
+     {
+      alert(`computer choice:${variable}.your choice:rock.you lose the game`);
+
+     }
+     else if(variable==='rock')
+     {
+      alert(`computer choice:${variable}.your choice:rock.game tied`);
+     }
+     else if(variable==='scissor')
+     {
+       alert(`computer choice:${variable}.your choice:rock.you win the game`);
+      }
+
+      }
+
+
+      function myfunction3()
+      {
+
+        const computerMove = Math.random();
+      let variable='';
+     if(computerMove<1/3 && computerMove>0)
+     {
+       variable='paper';
+
+
+     }else if(computerMove>1/3 && computerMove<2/3)
+     {
+      variable='rock';
+     }
+  
+     else if(computerMove>2/3 && computerMove<1)
+      {
+      variable='scissor';
+      } 
+
+     if(variable==='paper')
+     {
+      alert(`computer choice:${variable}.your choice:scissor.you win the game`);
+
+     }
+     else if(variable==='rock')
+     {
+      alert(`computer choice:${variable}.your choice:scissor.you lose the game`);
+     }
+     else if(variable==='scissor')
+     {
+       alert(`computer choice:${variable}.your choice:scissor. game tied`);
+      }
+      }
+      
+
+
+
+    </script>
+
+</body>
+</html>
